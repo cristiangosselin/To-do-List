@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-cristian:Test123@cluster0.hysjb.mongodb.net/todolistDB", {useNewUrlParser: true})
+mongoose.connect("mongodb+srv://prueba:prueba@cluster0.hysjb.mongodb.net/todoDB", {useNewUrlParser: true})
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
